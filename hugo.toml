@@ -1,0 +1,55 @@
+baseURL = 'http://localhost:1313/'
+locale = 'th-TH'
+title = 'KITTIPHUM'
+theme = 'hugo-theme-stack'
+
+[taxonomies]
+tag = 'tags'
+category = 'categories'
+
+[params]
+mainSections = ['posts']
+rssFullContent = true
+
+[params.sidebar]
+compact = false
+emoji = '✏️'
+subtitle = 'Personal blog Live Travel and Photograpy Live in chiangrai'
+avatar = 'img/avatar.jpg'
+
+[params.comments]
+enabled = false
+
+[params.imageProcessing.content]
+enabled = false
+
+[params.imageProcessing.thumbnail]
+enabled = false
+
+[params.footer]
+since = 2026
+customText = 'KITTIPHUM'
+
+[params.widgets]
+homepage = [
+    { type = "search" },
+    { type = "archives", params = { limit = 5 } },
+    { type = "tag-cloud", params = { limit = 5 } },
+]
+page = [{ type = "toc" }]
+
+[[menu.social]]
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/"
+
+[menu.social.params]
+icon = "brand-github"
+
+[[menu.social]]
+identifier = "twitter"
+name = "Twitter"
+url = "https://twitter.com/kittiphum"
+
+[menu.social.params]
+icon = "brand-twitter"
